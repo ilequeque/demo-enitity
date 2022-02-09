@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SuperHeroEntity;
 
 namespace SuperHeroEntity.Data
 {
@@ -6,6 +7,6 @@ namespace SuperHeroEntity.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        public DbSet<super> 
+        public DbSet<SuperHero> SuperHeroes { get; set; }
     }
 }
